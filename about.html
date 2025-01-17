@@ -1,0 +1,56 @@
+<!DOCTYPE html Cache-Control: private;>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Cruz Stock</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="Assests/TrebleClef.webp" type="image/x-icon"/>
+</head>
+<body>
+<!-- The Loading Screen -->
+<div class="loader-wrapper">
+    <span class="circle"></span>
+  </div>
+<!-- The sidebar -->
+<div class="sidebar">
+    <div class="header">
+        <h1 class="name">Cruz Stock</h1>
+        <h3 class="subname">Composer</h3>
+    </div>
+    <ul class="nav">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="active nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="works.html">Works</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<!-- The Body -->
+<div class="about-body">
+    <div class="about-headshot">
+        <h1>About</h1>
+        <img src="Assests/Cruz-Stock-HeadShot.JPG" align="top" width="25%" length="25%">
+        <p>
+            Cruz Stock (he/she) is interested in composing music close to the human soul that takes the listener on an emotional journey.
+        </p>
+        <p>
+            His piece “Hide Away” was performed at the 2023 Scheherazade Music Festival on June 15th in Manhattan, Kansas.
+        </p>
+        <p>
+            Cruz is currently pursuing degrees in both Composition and Instrumental Music Education at Bowling Green State University. Her teachers include Christopher Dietz & Piyawat Louilarpprasert in composition and Susan Nelson, Emily Klepinger, and Mariah Stadel in bassoon.
+        </p>
+    </div>
+</div>
+</body>
+<script>
+    document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector(".loader-wrapper").style.visibility = "visible";
+      } else {
+          document.querySelector(".loader-wrapper").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+      }
+  };
+  </script>
+</html>

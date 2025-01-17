@@ -1,0 +1,451 @@
+/* *** WEBSITE STYLE *** */
+
+:root {
+  --background-color: #e9f6fe
+}
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url(Assests/Fonts/SourceSans3-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Assests/Fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(Assests/Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+/* *** PRELOADER *** */
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.circle {
+  height: 45px;
+  width: 45px;
+  background-color: #e3a2a0;
+  border-radius: 50%;
+  display: inline-block;
+  animation-name: loader;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  0% {background-color: #e3a2a0;}
+  50% {background-color: var(--background-color); width: 350px; height: 350px}
+  100% {background-color: #e3a2a0;}
+}
+
+/* *** SIDEBAR *** */
+
+.sidebar {
+    font-family: "Raleway" , sans-serif;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e3a2a0;
+    overflow-x: hidden;
+    padding-top: 16px;
+    border-bottom: none;
+    border-right: 2px solid;
+  }
+  
+  /* Style sidebar links */
+  .sidebar a {
+    font-family: "Raleway" , sans-serif;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    margin-top: 7px;
+    text-align: center;
+    width: 180px;
+  }
+  
+  /* Style links on mouse-over */
+  .sidebar a:hover {
+    color: var(--background-color);
+  }
+
+  .sidebar a.active {
+    color: #177db8;
+  }
+
+  .header h1.name {
+    color: #000000;
+    margin-left: 20px;
+  }
+
+  .name {
+    margin-left: 20px;
+  }
+
+  .header h3 {
+    color: #000000;
+    margin-left: 20px;
+  }
+
+  .nav {
+    margin-top: 50%;
+    list-style-type: none;
+  }
+
+  .nav-link {
+    transition: transform .2s;
+  }
+
+  .nav-link:hover {
+    transform:scale(1.2);
+  }
+  
+  /* *** HOME PAGE *** */
+
+  .home-body {
+    font-family: "Raleway" , sans-serif;
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  .home-body h2 {
+    background-size: contain;
+    position: sticky;
+    top: 113vw;
+    font-size: 3vw;
+  }
+
+  .headshot {
+    width: 100%;
+    height: 1500px;
+    background-image: url('../Assests/Cruz-Stock-HeadShot.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: relative;
+  }
+
+  .home-body h1 {
+    font-size: 10vw;
+    margin: 0 0 0 0px;
+    position: absolute;
+    top: 100vw;
+    left: 35vw;
+  }
+
+  /* *** ABOUT PAGE *** */
+
+  .about-body {
+    font-family: "Raleway" , sans-serif;
+    font-size: 20px;
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  /* *** WORKS PAGE *** */
+
+  .works-body {
+    font-family: "Raleway" , sans-serif;
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+  }
+
+  .works-link {
+    border: solid black;
+    transition: transform .2s;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+
+  .works-link:hover {
+    transform:scale(1.15);
+  }
+
+  .works-name {
+    text-align: center;
+    word-wrap: normal;
+    width: 170px
+  }
+
+  .works-items {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+
+  .works-item {
+    margin: 30px;
+  }
+
+  .works-item-first {
+    margin-left: none;
+  }
+
+  .video {
+    aspect-ratio: 16/9;
+  }
+
+  /* *** CONTACT PAGE *** */
+
+  .contact-body {
+    font-family: "Raleway" , sans-serif;
+    margin-left: 300px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    height: 100vh;
+    display: flex;
+  }
+
+  .contact-form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-inputs {
+    font-family: "Raleway", sans-serif;
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+  }
+
+  .contact-form textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+  }
+
+  .contact-inputs:focus {
+    border: 2px solid #177db8;
+  }
+
+  .contact-inputs::placeholder {
+    color: #a9a9a9;
+  }
+
+  .contact-form button {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #000;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .contact-form button:hover {
+    background: #177db8;
+    transform: scale(1.1);
+  }
+
+  /* *** AUTO FORMATTING DIFFERENT WINDOW SIZES *** */
+  
+  /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid;
+      }
+  
+      div.content {margin-left: 0;}
+  
+      .sidebar a {
+        float: right;
+        text-align: center;
+        padding: 0px 0px;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        width: auto;
+        margin-right: 4vw;
+    }
+  
+      .header {
+          float: left;
+          display: flex;
+      }
+  
+      .header h1.name {
+          font-size: 20px;
+          margin-top: 0px;
+      }
+  
+      .header h3 {
+          font-size: 0px;
+      }
+  
+      .nav {
+          margin: auto;
+          text-align: center;
+          float: right;
+          display: flex;
+      }
+  
+      .sidebar li {
+          margin-left: 0px;
+          margin-right: 0px;
+      }
+
+      .home-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        padding: 0px 0px;
+      }
+
+      .headshot h1 {
+        font-size: 10vw;
+        margin: 0;
+        position: absolute;
+        top: 125vw;
+        left: 25vw
+      }
+
+      .home-body h2 {
+        position: absolute;
+        top: 140vw;
+        font-size: 4vw;
+      }
+
+      .works-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+
+      .contact-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+    }
+  
+
+  /* On screens that are less than 900px wide, make the sidebar into a topbar */
+@media screen and (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+      height: 40px;
+      position: fixed;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 2px solid;
+      border-right: none;
+    }
+
+    .sidebar a {
+        text-align: center;
+        padding: 0px 0px;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        width: auto;
+        margin-right: 4vw;
+    }
+
+    .header {
+        float: left;
+        display: flex;
+        position: absolute;
+    }
+
+    .header h1.name {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .header h3 {
+        font-size: 0px;
+    }
+
+    .nav {
+        margin: auto;
+        text-align: center;
+        float: right;
+        display: flex;
+    }
+
+    .sidebar li {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .home-body {
+        margin-left: 0px;
+        padding: 0px 0px;
+    }
+
+    .headshot h1 {
+        font-size: 10vw;
+        margin: 0;
+        position: absolute;
+        top: 125vw;
+        left: 25vw
+      }
+
+      .home-body h2 {
+        position: absolute;
+        top: 140vw;
+        font-size: 4vw;
+      }
+
+      .works-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+
+      .contact-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+
+      .about-body {
+        margin-left: 0px; /* Same as the width of the sidenav */
+        margin-top: 70px;
+        padding: 0px 10px;
+      }
+
+      .contact-inputs {
+        width: 75vw;
+      }
+    }

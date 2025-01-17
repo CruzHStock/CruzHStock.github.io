@@ -1,0 +1,49 @@
+<!DOCTYPE html Cache-Control: private;>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cruz Stock</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="Assests/TrebleClef.webp" type="image/x-icon"/>
+</head>
+<!-- The Loading Screen -->
+<div class="loader-wrapper">
+    <span class="circle"></span>
+  </div>
+<!-- The sidebar -->
+<div class="sidebar">
+    <div class="header">
+        <h1 class="name">Cruz Stock</h1>
+        <h3 class="subname">Composer</h3>
+    </div>
+    <ul class="nav">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="works.html">Works</a></li>
+        <li><a class="active nav-link" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="contact-body">
+    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <h1>Contact</h1>
+        <input type="hidden" name="access_key" value="b2dd030e-9dd3-4e59-9c88-5524d6f915fb">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script>
+    document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector(".loader-wrapper").style.visibility = "visible";
+      } else {
+          document.querySelector(".loader-wrapper").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+      }
+  };
+  </script>
+</html>

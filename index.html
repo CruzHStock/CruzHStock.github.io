@@ -1,0 +1,48 @@
+<!DOCTYPE html Cache-Control: private;>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz Stock</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="Assests/TrebleClef.webp" type="image/x-icon"/>
+</head>
+<body>
+<!-- The Loading Screen -->
+<div class="loader-wrapper">
+  <span class="circle"></span>
+</div>
+<!-- The sidebar -->
+<div class="sidebar">
+    <div class="header">
+        <!--<img class="name" src="Cruz_Name.png" style="width:200px;height:50px;">-->
+        <h1 class="name">Cruz Stock</h1>
+        <h3 class="subname">Composer</h3>
+    </div>
+    <ul class="nav">
+        <li><a class="active nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="works.html">Works</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<!-- The Body -->
+<div class="home-body">
+  <div class="headshot"></div>
+  <div></div>
+  <h1>Cruz Stock</h1>
+</div>
+<script>
+  document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.querySelector(".loader-wrapper").style.visibility = "visible";
+    } else {
+        document.querySelector(".loader-wrapper").style.display = "none";
+        document.querySelector("body").style.visibility = "visible";
+    }
+};
+</script>
+
+</body>
+</html>

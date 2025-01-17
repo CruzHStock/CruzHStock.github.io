@@ -1,0 +1,78 @@
+<!DOCTYPE html Cache-Control: private;>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Cruz Stock</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" href="Assests/TrebleClef.webp" type="image/x-icon"/>
+</head>
+<!-- The Loading Screen -->
+<div class="loader-wrapper">
+    <span class="circle"></span>
+  </div>
+<!-- The sidebar -->
+<div class="sidebar">
+    <div class="header">
+        <h1 class="name">Cruz Stock</h1>
+        <h3 class="subname">Composer</h3>
+    </div>
+    <ul class="nav">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="active nav-link" href="works.html">Works</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<div class="works-body">
+    <div class="works-list">
+        <h1>Works</h1>
+        <br>
+        <h2>2024</h2>
+        <h2>2023</h2>
+        <ul class="works-items">
+            <li class="works-item works-list-first">
+                <a href="Pages/hide-away.html">
+                    <img class = "works-link" src="Assests/Works/Hide-Away.png" width="170" height="220"></a>
+                <h4 class = "works-name">Hide Away</h3>
+            </li>
+            <li class="works-item">
+                <a href="Pages/where-i-fall.html">
+                    <img class = "works-link" src="Assests/Works/This-is-Where-I-Fall.png" width="170" height="220"></a>
+                <h4 class = "works-name">This is Where I Fall</h3>
+            </li>
+            <li class="works-item">
+                <a href="Pages/too-noisy.html">
+                    <img class = "works-link" src="Assests/Works/Too-Noisy.png" width="170" height="220"></a>
+                <h4 class = "works-name">Too Noisy</h3>
+            </li>
+            <li class="works-item">
+                <a href="Pages/scared-dark.html">
+                    <img class = "works-link" src="Assests/Works/I've-Always-Been-Scared-of-the-Dark.png" width="170" height="220"></a>
+                <h4 class = "works-name">I've Always Been Scared of the Dark</h3>
+            </li>
+            <li class="works-item">
+                <a href="Pages/life-well-spent.html">
+                    <img class = "works-link" src="Assests/Works/Life-Well-Spent.png" width="170" height="220"></a>
+                <h4 class = "works-name">Life Well Spent</h3>
+            </li>
+            <li class="works-item">
+                <a href="Pages/lunch-rush.html">
+                    <img class = "works-link" src="Assests/Works/Lunch-Rush.png" width="170" height="220"></a>
+                <h4 class = "works-name">Lunch Rush</h3>
+            </li>
+    </ul>
+    </div>
+</div>
+<script>
+    document.onreadystatechange = function() {
+      if (document.readyState !== "complete") {
+          document.querySelector("body").style.visibility = "hidden";
+          document.querySelector(".loader-wrapper").style.visibility = "visible";
+      } else {
+          document.querySelector(".loader-wrapper").style.display = "none";
+          document.querySelector("body").style.visibility = "visible";
+      }
+  };
+  </script>
+</html>
