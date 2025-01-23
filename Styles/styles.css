@@ -433,6 +433,7 @@ body {
       }
 
       .contact-inputs {
-        width: 75vw;
+        width: 50vw;
+        min-width: 300px;
       }
     }
